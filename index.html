@@ -64,7 +64,7 @@
       width: 100%;
     }
 
-     .hero {
+    .hero {
       height: 100vh;
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
       url('https://images.unsplash.com/photo-1617531653332-bd46c24f2068') center/cover no-repeat;
@@ -74,6 +74,7 @@
       text-align: center;
       padding: 0 20px;
     }
+
     .hero-content h2 {
       font-size: 60px;
       font-weight: 700;
@@ -205,7 +206,15 @@
 <body>
 
 <header>
-  <h1>BMW M</h1>
+  <div style="display:flex; align-items:center; gap:10px;">
+    <img src="img/logo.png" alt="BMW Logo" style="width:40px;">
+    <h1 style="display:flex; align-items:center; gap:6px;">
+      BMW M
+      <span style="display:inline-block; width:10px; height:20px; background:#1c69d4;"></span>
+      <span style="display:inline-block; width:10px; height:20px; background:#002f6c;"></span>
+      <span style="display:inline-block; width:10px; height:20px; background:#d5001c;"></span>
+    </h1>
+  </div>
   <nav>
     <a href="#">Home</a>
     <a href="#cars">Models</a>
@@ -215,7 +224,6 @@
 </header>
 
 <section class="hero">
-  
   <div class="hero-content">
     <h2>Driven by Performance</h2>
     <p>Experience the ultimate driving machine with BMW Motorsport engineering.</p>
@@ -230,7 +238,7 @@
     <div class="card">
       <img src="img/f80.avif">
       <div class="card-content">
-        <h3>BMW M4 F80</h3>
+        <h3>BMW M4 Competition</h3>
         <p>503 HP twin-turbo inline-6 engine with aggressive styling.</p>
       </div>
     </div>
